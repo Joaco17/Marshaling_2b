@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Biblioteca>
+<libro>
+<titulo>Bellezas de Europa</titulo>
+<autor>Atlas</autor>
+<año>1994</año>
+<editorial>SM</editorial>
+<num_paginas>254</num_paginas>
+</libro>
+<libro>
+<titulo>Dragon Ball</titulo>
+<autor>Akira Toriyama</autor>
+<año>1989</año>
+<editorial>Toei</editorial>
+<num_paginas>255</num_paginas>
+</libro>
+</Biblioteca>
