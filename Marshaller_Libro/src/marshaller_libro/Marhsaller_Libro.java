@@ -13,8 +13,8 @@ public class Marhsaller_Libro {
 		ArrayList<Libro> libros;
 		
 		libros = new ArrayList<Libro>();
-		libros.add(new Libro("Bellezas de Europa","Atlas",1994,"SM",254));
-		libros.add(new Libro("Dragon Ball","Akira Toriyama",1989,"Toei",255));
+		libros.add(new Libro("Bellezas de Europa","Francesco","Totti",1994,"SM",254));
+		libros.add(new Libro("Dragon Ball","Akira","Toriyama",1989,"Toei",255));
 		
 		Marshaller marsh = new Marshaller(libros);
 		

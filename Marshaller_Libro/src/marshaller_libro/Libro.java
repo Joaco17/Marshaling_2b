@@ -1,20 +1,23 @@
 package marshaller_libro;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Libro implements Serializable {
 private String titulo;
-private String autor;
+private ArrayList<String> autor;
 private int año;
 private String editorial;
 private int numero_paginas;
 
-public Libro(String t, String a, int añ, String e, int num){
+public Libro(String t,String nombre, String apellido, int añ, String e, int num){
+	this.autor= new ArrayList<String>();
 	this.titulo=t;
-	this.autor= a;
 	this.año=añ;
 	this.editorial=e;
 	this.numero_paginas=num;
+	this.autor.add(nombre);
+	this.autor.add(apellido);
 }
 
 public String getTitulo() {
@@ -25,11 +28,11 @@ public void setTitulo(String titulo) {
 	this.titulo = titulo;
 }
 
-public String getAutor() {
+public ArrayList<String> getAutor() {
 	return autor;
 }
 
-public void setAutor(String autor) {
+public void setAutor(ArrayList<String> autor) {
 	this.autor = autor;
 }
 

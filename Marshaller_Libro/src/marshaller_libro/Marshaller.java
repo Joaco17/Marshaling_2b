@@ -67,16 +67,25 @@ public class Marshaller {
 		Element LibroEle = dom.createElement("libro");
 
 		// creamos el elemento titulo y el nodo de texto y lo añadimos al elemento libro
-		Element tituloEle = dom.createElement("titulo");		
+		Element tituloEle = dom.createElement("titulo");	
+		tituloEle.setAttribute("año", String.valueOf(l.getAño()));
 		Text tituloTexto = dom.createTextNode(l.getTitulo());
 		tituloEle.appendChild(tituloTexto);
 		LibroEle.appendChild(tituloEle);
 		
 		// creamos el elemento autor y el nodo de texto y lo añadimos al elemento libro
-		Element autorEle = dom.createElement("autor");		
-		Text autorTexto = dom.createTextNode(l.getAutor());
-		autorEle.appendChild(autorTexto);
+		Element autorEle = dom.createElement("autor");	
+		Element nombreEle = dom.createElement("nombre");
+		Element nombre2Ele = dom.createElement("nombre");
+		
+		
+		nombreEle.setTextContent(l.getAutor().get(0));
+		nombre2Ele.setTextContent(l.getAutor().get(1));
+		
 		LibroEle.appendChild(autorEle);
+		autorEle.appendChild(nombreEle);
+		autorEle.appendChild(nombre2Ele);
+		
 				
 		// creamos el elemento año y el nodo de texto y lo añadimos al elemento libro
 		Element añoEle = dom.createElement("año");		
